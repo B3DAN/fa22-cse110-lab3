@@ -4,7 +4,7 @@
         <title>
             Aedan's Example Website for CSE110 <!-- This is a comment btw -->
         </title>
-        <meta http-equiv="refresh" content="240;url=https://www.youtube.com/watch?v=5hTxlg3cQ_E"/> 
+        <meta http-equiv="refresh" content="300;url=https://www.youtube.com/watch?v=5hTxlg3cQ_E"/> 
         <link href="icon\9.png" rel="icon">
 
     </head>
@@ -29,10 +29,10 @@
             </h1>
             <img src="Images\Boardroom Stock Photo.jpeg" alt="Our team hard at work"/>
             <p> 
-                <span>This Page is meant to uphold the highest standard possible for meeting notes</span>
+                <span>This Page is meant to uphold the highest standard possible for meeting notes</span> <br>
             </p>
             <p>
-                Other teams will <b>weep</b> on being shown this page
+                <small>As a warning, this page redirects to a Youtube video after <b>5 minutes</b> </small>
             </p>
         </header>
 
@@ -42,43 +42,93 @@
             <h2>
                 First Team Meeting: Forming and Brainstorming
             </h2>
+            <h2>
+                10/4/22
+            </h2>
+            
+            <h3>
+                Attendence
+            </h3>
+
+            <input type="checkbox" id="name1" name="name1" checked> 
+            <label for="name">Aedan</label>
+
+            <br>
+
+            <input type="checkbox" id="name2" name="name2" checked> 
+            <label for="name">Ginger</label>
+
+            <br>
+
+            <input type="checkbox" id="name3" name="name3" checked> 
+            <label for="name">Powell</label>
+
+            <br>
+
+            <input type="checkbox" id="name4" name="name4"> 
+            <label for="name">Malcom</label>
+
+            <br>
+
+            <h3>Agenda</h3>
 
             <p>
-                The Goal of this meeting is to come together as a team, and to that end we will:
+                <span class="Agenda Title">The Goal of this meeting is to come together as a team, and to that end we will: </span>
             </p>
 
-            <div class="checkbox">
+            <div class="Agenda">
                 <fieldset>
                     <ul>
                         <li>
-                            <input type="checkbox" id="introduce" name="introduce" checked> 
-                            <label for="introduce">Introduce ourselves</label>
+                            Cover things left from last meeting
+                            <ul>
+                                <li>
+                                    Nothing from previous meetings
+                                </li>
+                            </ul>
                         </li>
                         <li>
-                            <input type="checkbox" id="game" name="game" checked> 
-                            <label for="game">Decide on an initial game to play as a group</label>
+                            New Business to Introduce
+                            <ul>
+                                <li>
+                                    Introduce ourselves
+                                </li>
+                                <li>
+                                    Decide on an initial game to play as a group
+                                </li>
+                                <li>
+                                    Reveal our current skillsets
+                                    <!-- text area with submit button-->
+                                </li>
+                                <li>
+                                    Discuss what we expect out of this course and <br>
+                                    consolidate shared goals
+                                    <!-- video section -->
+                                </li>
+                                <li>
+                                    Agree upon a name to represent our team
+                                    <!-- some form of input-->
+                                </li>
+                            </ul>
                         </li>
                         <li>
-                            <input type="checkbox" id="skill" name="skill" checked> 
-                            <label for="skill" checked>Reveal our current skillsets</label>
-                            <!-- text area with submit button-->
-                        </li>
-                        <li>
-                            <input type="checkbox" id="expectation" name="expectation" checked> 
-                            <label for="expectation">Discuss what we expect out of this course and <br>
-                            consolidate shared goals </label>
-                            <!-- video section -->
-                        </li>
-                        <li>
-                            <input type="checkbox" id="name" name="name"> 
-                            <label for="name"> Agree upon a name to represent our team </label>
-                            <!-- some form of input-->
+                            Questions and considerations for next meeting
                         </li>
                     </ul>
                 </fieldset>
             </div>
 
         </main>
+
+        <hr>
+
+        <section>
+            <h3>
+                Last Meeting
+            </h3>
+            As this is our first meeting there was nothing to discusss <br>
+            Using this as reference for furture meetings
+        </section>
 
         <hr>
             
@@ -115,13 +165,16 @@
             </h3>
 
             <p>
-                We discussed 3 different games to play in meeting, please select and submit one of the games.
+                As part of team bonding we were asked to pick a team bonding activity. <br>
+                <b>Valorant</b> was mentioned for communcation. <br>
+                <b>Among Us</b> because it can support 10 players <br>
+                <b>Heads Up 7 Up</b> to remind us of our school days <br>
             </p>
             
             <label for="game select">Choose game:</label>
             <select id="game select">
                 <option id="initial">Select a Game</option>
-                <option id="Amongus">Amongus</option>
+                <option id="Amongus">Among Us</option>
                 <option id="Valorant">Valorant</option>
                 <option id="HeadsUp">Heads Up 7 Up</option>
             </select>
@@ -189,7 +242,13 @@
                 <li>
                     None of us know how to setup a camera
                 </li>
+                <li>
+                    Music increases profits
+                </li>
             </ul>
+
+            The diagram of the discussion is as follows: <br>
+            <img src="Images\Diagram.jpg" alt="Diagram of discussion" width="500">
         </section>
 
         <hr>
@@ -223,11 +282,37 @@
 
         <hr>
 
+        <section>
+            <h3>
+                Questions for next meeting and general comments
+            </h3>
+
+            Questions to be addressed for next meeting are as follows:
+
+            <ol>
+                <li> 
+                    Will we ever get serious?
+                </li>
+                <li>
+                    Can we still get our degrees if we fail this course?
+                </li>
+            </ol>
+
+            Comments are noted as:
+            <ul>
+                <li>
+                    It made no sense as a meeting, but it was fun!
+                </li>
+            </ul>
+        </section>
+
+        <hr>
+
         <footer>
             <p>
                 This page was created by your team leader for this and future meetings
             </p>
-            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Link to meeting 2</a>
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Link to meeting 2 Page</a>
         </footer>
     </body>
 
