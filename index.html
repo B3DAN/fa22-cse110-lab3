@@ -4,7 +4,8 @@
         <title>
             Aedan's Example Website for CSE110 <!-- This is a comment btw -->
         </title>
-        <link href="screenshots/9.png" rel="icon">
+        <meta http-equiv="refresh" content="240;url=https://www.youtube.com/watch?v=5hTxlg3cQ_E"/> 
+        <link href="icon\9.png" rel="icon">
 
     </head>
     <body>
@@ -26,14 +27,16 @@
             <h1>
                 Team 9 Meeting Notes
             </h1>
-            <img src="screenshots/Boardroom Stock Photo.jpeg" alt="Our team hard at work"/>
+            <img src="Images\Boardroom Stock Photo.jpeg" alt="Our team hard at work"/>
             <p> 
-                This Page is meant to uphold the highest standard possible for meeting notes
+                <span>This Page is meant to uphold the highest standard possible for meeting notes</span>
             </p>
             <p>
                 Other teams will <b>weep</b> on being shown this page
             </p>
         </header>
+
+        <hr>
 
         <main>
             <h2>
@@ -44,7 +47,7 @@
                 The Goal of this meeting is to come together as a team, and to that end we will:
             </p>
 
-            <div>
+            <div class="checkbox">
                 <fieldset>
                     <ul>
                         <li>
@@ -57,7 +60,7 @@
                         </li>
                         <li>
                             <input type="checkbox" id="skill" name="skill" checked> 
-                            <label for="skill" checked>Submit the site text form describing our skill set</label>
+                            <label for="skill" checked>Reveal our current skillsets</label>
                             <!-- text area with submit button-->
                         </li>
                         <li>
@@ -75,8 +78,150 @@
                 </fieldset>
             </div>
 
-
         </main>
+
+        <hr>
+            
+        <section>
+            <h3>
+                <span class="small header">Introdcutions</span>
+            </h3>
+
+            <p>
+                Click on a member name for what their recorded introduction was
+            </p>
+
+            <details>
+                <summary><em>Aedan</em></summary>
+                    "Hi Everyone! I like to code and snowboard and I am a team leader."
+            </details>
+
+            <details>
+                <summary><em>Ginger</em></summary>
+                    "Woof! I am Aedan's dog back home, I am the team mascot."
+            </details>
+
+            <details>
+                <summary><em>Powell</em></summary>
+                    "I am professor Powell.. I don't know how I got here."
+            </details>
+        </section>
+
+        <hr>
+
+        <section>
+            <h3>
+                <span class="small header">Game Discussion</span> 
+            </h3>
+
+            <p>
+                We discussed 3 different games to play in meeting, please select and submit one of the games.
+            </p>
+            
+            <label for="game select">Choose game:</label>
+            <select id="game select">
+                <option id="initial">Select a Game</option>
+                <option id="Amongus">Amongus</option>
+                <option id="Valorant">Valorant</option>
+                <option id="HeadsUp">Heads Up 7 Up</option>
+            </select>
+            <button class="submit" type="button"> Submit </button>
+
+        </section>
+
+        <hr>
+
+        <section>
+            <h3> 
+                <span  class="small header">Skill Discussion</span>
+            </h3>
+
+            <p>
+                We decided it would be easier to submit a form with our work 
+                experience so we could move onto other topics
+            </p>
+
+            <label for="workex"><strong>Prior Experience:</strong></label>
+            <br>
+            <textarea id="workex" name="workex" rows="5" cols="30">
+
+            </textarea>
+            <br>
+            <button class="submit" type="button"> Submit </button>
+        </section>
+        
+        <hr>
+
+        <section>
+
+            <h3>
+                <span class="small header">Expectations and Goals</span>
+            </h3>
+
+            Our video recording equipment was not setup for the first part of this discussion, but it was recorded for playback purposes <br>
+            <figure>
+                <figcaption><i>First Discussion Audio</i></figcaption>
+                <audio controls src="audio\12th Street Rag.mp3"></audio>
+            </figure>
+            The main takeaways from the audio are as follows:
+            <ul>
+                <li>
+                    We have no idea what we're doing
+                </li>
+                <li>
+                    Powell is the most experienced so he will be doing 80% of the code
+                </li>
+                <li>
+                    We all are expecting at least 110% in the class
+                </li>
+            </ul>
+
+            Eventually we were able to set up our camera, so we were able to record the rest of the discussion
+            <figure>
+                <figcaption><i>Meeting Recording</i></figcaption>
+                <video controls width="500">
+                    <source src="videos\DiscussionRecording.mp4" type="video/mp4">
+                </video>
+            </figure>
+
+            The main take aways from the video are as follows:
+            <ul>
+                <li>
+                    None of us know how to setup a camera
+                </li>
+            </ul>
+        </section>
+
+        <hr>
+
+        <section>
+            <h3>
+                <span  class="small header">Team Name</span>
+            </h3>
+
+            As we did not end up discussing it due to time constraints, I have modified this site to allow you to submit a team name 
+            
+            <Br> Please select <strong>your name</strong> as well:
+            <form>
+                <label for="TeamName">Enter a Team Name:</label>
+                <input type="text" name="TeamName" id="TeamName" required>
+
+                <br>
+
+                <label for="NameSelect">Select or type your name:</label>
+                <input list="NameChoices" name="NameSelect" id="NameSelect" required>
+
+                <datalist id="NameChoices">
+                    <option value="Aedan">
+                    <option value="Ginger">
+                    <option value="Powell">
+                </datalist>
+                <br>
+                <button class="submit" type="button"> Submit </button>
+            </form>
+        </section>
+
+        <hr>
 
         <footer>
             <p>
