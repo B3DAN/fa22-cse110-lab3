@@ -4,10 +4,18 @@
         <title>
             Aedan's Example Website for CSE110 <!-- This is a comment btw -->
         </title>
-        <meta http-equiv="refresh" content="300;url=https://www.youtube.com/watch?v=5hTxlg3cQ_E" /> 
+        <meta http-equiv="refresh" content="5000;url=https://www.youtube.com/watch?v=5hTxlg3cQ_E" /> 
         <link href="icon/9.png" rel="icon">
+        <link href="WebsiteSyling.css" rel="stylesheet">
 
     </head>
+
+    <style>
+        p{
+            color: purple;
+        }
+    </style>
+
     <body>
         <header>
             <nav>
@@ -27,12 +35,13 @@
             <h1>
                 Team 9 Meeting Notes
             </h1>
-            <img src="Images/Boardroom Stock Photo.jpeg" alt="Our team hard at work"/>
+            
+            <img id="hi" src="Images/Boardroom Stock Photo.jpeg" alt="Our team hard at work"/>
             <p> 
                 <span>This Page is meant to uphold the highest standard possible for meeting notes</span> <br>
             </p>
             <p>
-                <small>As a warning, this page redirects to a Youtube video after <b>5 minutes</b> </small>
+                <small>As a warning, this page redirects to a Youtube video after <span id="warning"><b>45 minutes</b></span> </small>
             </p>
         </header>
 
@@ -50,30 +59,30 @@
                 Attendence
             </h3>
 
-            <input type="checkbox" id="name1" name="name1" checked> 
-            <label for="name1">Aedan</label>
+            <input type="checkbox" name="name1" checked> 
+            <label for="name1" class="name">Aedan</label>
 
             <br>
 
-            <input type="checkbox" id="name2" name="name2" checked> 
-            <label for="name2">Ginger</label>
+            <input type="checkbox" name="name2" checked> 
+            <label for="name2" class="name">Ginger</label>
 
             <br>
 
-            <input type="checkbox" id="name3" name="name3" checked> 
-            <label for="name3">Powell</label>
+            <input type="checkbox" name="name3" checked> 
+            <label for="name3" class="name">Powell</label>
 
             <br>
 
-            <input type="checkbox" id="name4" name="name4"> 
-            <label for="name4">Malcom</label>
+            <input type="checkbox" name="name4"> 
+            <label for="name4" class="name">Malcom</label>
 
             <br>
 
             <h3>Agenda</h3>
 
             <p>
-                <span class="Agenda Title">The Goal of this meeting is to come together as a team, and to that end we will: </span>
+                <span id="AgendaTitle">The Goal of this meeting is to come together as a team, and to that end we will: </span>
             </p>
 
             <div class="Agenda">
@@ -124,7 +133,7 @@
 
         <section>
             <h3>
-                Last Meeting
+                <span class="smallHeader">Last Meeting</span>
             </h3>
             As this is our first meeting there was nothing to discusss <br>
             Using this as reference for furture meetings
@@ -134,42 +143,58 @@
             
         <section>
             <h3>
-                <span class="small header">Introdcutions</span>
+                <span class="smallHeader">Introdcutions</span>
             </h3>
 
             <p>
                 Click on a member name for what their recorded introduction was
             </p>
 
-            <details>
-                <summary><em>Aedan</em></summary>
-                    "Hi Everyone! I like to code and snowboard and I am a team leader."
-            </details>
+            <div class="Intro">
+                <div class="Sum1">
+                    <details>
+                        <summary><em>Aedan</em></summary>
+                        "Hi Everyone! I like to code and snowboard and I am a team leader."
+                    </details>
+                </div>
 
-            <details>
-                <summary><em>Ginger</em></summary>
+                <div class="Sum2">
+                <details>
+                    <summary><em>Ginger</em></summary>
                     "Woof! I am Aedan's dog back home, I am the team mascot."
-            </details>
+                </details>
+                </div>
 
-            <details>
-                <summary><em>Powell</em></summary>
-                    "I am professor Powell.. I don't know how I got here."
-            </details>
+                <div class="Sum3">
+                <details>
+                    <summary><em>Powell</em></summary>
+                        "I am professor Powell.. I don't know how I got here."
+                </details>
+            </div>
+
+            </div>
         </section>
 
         <hr>
 
         <section>
             <h3>
-                <span class="small header">Game Discussion</span> 
+                <span class="otherHeader">Game Discussion</span> 
             </h3>
 
-            <p>
+            
                 As part of team bonding we were asked to pick a team bonding activity. <br>
-                <b>Valorant</b> was mentioned for communcation. <br>
-                <b>Among Us</b> because it can support 10 players <br>
-                <b>Heads Up 7 Up</b> to remind us of our school days <br>
-            </p>
+                <div class="grid">
+                <span class="Valorant"><b>Valorant</b> was mentioned for communcation.<br></span>
+                <span class="AmongUs"><b>Among Us</b> because it can support 10 players <br></span>
+                <span class="sevenup"><b>Heads Up 7 Up</b> to remind us of our school days <br></span>
+                <br>
+            
+            
+            
+            
+            </div>
+           
             
             <label for="game_select">Choose game:</label>
             <select id="game_select">
@@ -186,7 +211,7 @@
 
         <section>
             <h3> 
-                <span  class="small header">Skill Discussion</span>
+                <span class="otherHeader">Skill Disucssion</span> 
             </h3>
 
             <p>
@@ -208,7 +233,7 @@
         <section>
 
             <h3>
-                <span class="small header">Expectations and Goals</span>
+                <span id="autoHeader">Expectations and Goals</span>
             </h3>
 
             Our video recording equipment was not setup for the first part of this discussion, but it was recorded for playback purposes <br>
@@ -248,7 +273,7 @@
             </ul>
 
             The diagram of the discussion is as follows: <br>
-            <img src="Images/Diagram.jpg" alt="Diagram of discussion" width="500">
+            <img id="graph" src="Images/Diagram.jpg" alt="Diagram of discussion" width="500">
         </section>
 
         <hr>
@@ -260,8 +285,8 @@
 
             As we did not end up discussing it due to time constraints, I have modified this site to allow you to submit a team name 
             
-            <Br> Please select <strong>your name</strong> as well:
-            <form>
+            <br> Please select <strong>your name</strong> as well:
+            <form >
                 <label for="TeamName">Enter a Team Name:</label>
                 <input type="text" name="TeamName" id="TeamName" required>
 
@@ -283,7 +308,7 @@
         <hr>
 
         <section>
-            <h3>
+            <h3 style="background-color:yellowgreen;text-align:end">
                 Questions for next meeting and general comments
             </h3>
 
@@ -301,18 +326,20 @@
             Comments are noted as:
             <ul>
                 <li>
-                    It made no sense as a meeting, but it was fun!
+                    <style height: 20px></style> 
                 </li>
             </ul>
         </section>
 
+        <hr>
         <hr>
 
         <footer>
             <p>
                 This page was created by your team leader for this and future meetings
             </p>
-            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Link to meeting 2 Page</a>
+            <span class="toBlock">This bit at the end here is a bit different though</span> <span class="toBlock">It is being used for a different reason</span> <span class="toBlock">Mainly, to play with CSS</span> 
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="toBlock">Link to meeting 2 Page</a>
         </footer>
     </body>
 
