@@ -1,7 +1,182 @@
-.SiteNav {
+@font-face { /* Download file from fonts, added to Fonts file*/
+    font-family: AgendaTitle;
+    src: url('Fonts/BadScript-Regular.ttf');
+}
+
+@font-face {
+    font-family: EntireDocument;
+    src: url(Fonts/Roboto-Regular.ttf);
+}
+
+@media (hover: hover) {
+    details:hover{
+        background-color: yellow;
+    }
+}
+
+.SiteNav{
+    display: inline;
+    padding: 1px;
+}
+
+h1 {
+    background-color: yellow;
+    position: sticky;
+    top: 0px;
+    right: 0px;
+}
+
+h2:hover{
+    background-color: yellow;
+}
+
+.Agenda{
+    color: #E54214;
+}
+
+*{
+    font-family: EntireDocument;
+}
+
+/* # used for element*/
+#AgendaTitle{
+    font-family: AgendaTitle;
+}
+
+#hi{
+    border-width: 1cm;
+    border-style: groove;
+    border-color: green;
+
+    position: relative;
+    top: 10px; left: 3.5in;
+}
+
+#graph{
+    position: relative;
+    left: 55vw;
+    bottom: 70ch;
+    border-radius: 8em;
+}
+
+#warning{
+    color: hsl(200, 100%, 56%);
+}
+
+.name{
+    color:rgb(81, 153, 26);
+}
+
+section ul{
+    text-decoration: underline;
+}
+
+main > p,h2{
+    text-align: center;
+}
+
+a[href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"]{
+    background-image: url(Images/Rick.jpg);
+    background-size: 200px;
+    height: 200px;
+    max-width: 200px;
+}
+
+.smallHeader{
+    border: 5px solid blueviolet;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    padding-left: 3px;
+    padding-right: 8px;
+    margin-top: 5px;
+    margin-bottom: 0px;
+    margin-left: 7px;
+    margin-right: 2px;
+}
+
+.otherHeader{
+    background-color: yellow;
+    border: 10px solid #0269A4;
+    margin: 2px 2px 2px 2px;
+    padding: 2px 2px 2px 2px; 
+}
+
+#autoHeader{
+    border: 10px solid palevioletred;
+    padding: 3px 3px 3px 3px;
+    margin:auto;
+}
+
+.Intro{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: end;
+}
+
+.Sum1{
+    flex-grow: 0.2;
+}
+
+.Sum2{
+    flex-grow: 0.2;
     
 }
 
-a[href="#"]{
-    color:red
+.Sum3{
+    flex-grow: 0.2;
 }
+
+.grid{
+    background-color: #E54214;
+    display: grid;
+    grid-template-columns: repeat(3, lfr);
+    grid-template-rows: repeat(4, lfr);
+}
+
+.Valorant{
+    background-color: yellow;
+    grid-column: 1;
+    grid-row: 1.5
+}
+
+.AmongUs{
+    grid-column: 5;
+    background-color: green;
+    place-self: center;
+}
+
+.sevenup{
+    grid-row: 5;
+    grid-column: 5;
+    background-color:azure;
+
+}
+
+button:active{
+    border: 5px solid black;
+    min-width: none;
+}
+
+button{
+    height: 100px;
+    width: 100px;
+}
+
+section+hr{
+    background-color: green;
+    height: 5px;
+}
+
+ol~ul{
+    text-transform: uppercase;
+}
+
+.toBlock{
+    display: block;
+}
+
+.small.header{
+    background-color: aquamarine;
+}
+
+
